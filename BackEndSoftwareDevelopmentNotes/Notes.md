@@ -78,3 +78,20 @@ React uses a Virtual DOM to represent the browser DOM in memory.
 
 
 
+# Python 
+
+Data types
+
+1. Numeric
+
+2. Sequence
+
+3. Dictionary
+
+4. Boolean 
+
+5. Set
+
+   ![Screenshot 2023-11-29 at 10.25.21 AM](Notes/Screenshot%202023-11-29%20at%2010.25.21%E2%80%AFAM.png)
+
+![Screenshot 2023-11-29 at 12.15.03 PM](Notes/Screenshot%202023-11-29%20at%2012.15.03%E2%80%AFPM.png)
