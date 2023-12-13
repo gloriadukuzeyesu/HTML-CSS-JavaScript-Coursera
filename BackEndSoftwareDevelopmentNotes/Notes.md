@@ -95,3 +95,88 @@ Data types
    ![Screenshot 2023-11-29 at 10.25.21 AM](Notes/Screenshot%202023-11-29%20at%2010.25.21%E2%80%AFAM.png)
 
 ![Screenshot 2023-11-29 at 12.15.03 PM](Notes/Screenshot%202023-11-29%20at%2012.15.03%E2%80%AFPM.png)
+
+
+
+
+
+# Procedure programming
+
+* easy to learn
+* Reusable
+* Hard to maintain
+* Code is exposed through out the progam 
+
+
+
+### Alogarithms
+
+Set of instructions to complete a task.
+
+Key to solve the problem is to break the problem into small problem
+
+
+
+# Functional Programming
+
+Pure functions are used in functional programming to assure the integrity of data outside the scope of the pure function.     
+
+Advantages of Pure functions
+
+* Known outcome
+* Consistent and reriable
+* Cache : since you are know the out put each time
+* Multi-threaded programs
+
+Example
+
+```python
+my_list = [1,2,3]
+
+def add_t_list(lst, item):
+    nl = lst.copy()
+    nl.append(item)
+    return nl
+
+new_list = add_t_list(my_list, 10)
+print(my_list) #[1, 2, 3]
+print(new_list) # [1, 2, 3, 10]
+```
+
+Pure functions does not alter the global variables. 
+
+* Pure functions keep the code cleaner and easy to debug.
+
+
+
+
+
+# Recursion 
+
+a function that calls itself
+
+### Advantages
+
+* Neat code
+* Sub-problems
+* Easy sequences
+
+```python
+def factorial (n):
+    if n <= 1:
+        return 1
+    return n * factorial( n - 1)
+
+print(factorial(0))
+```
+
+### Disadvantages
+
+* Hard to follow
+
+* Memory
+
+* Debugging
+
+  
+
