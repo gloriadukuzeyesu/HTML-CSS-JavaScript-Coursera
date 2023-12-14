@@ -278,3 +278,46 @@ four main types of comprehesions in Python:
    ```
 
    
+
+
+
+# OOP
+
+## Advantages:
+
+* Modularity
+* Easier to understand
+* Reusable
+* Abstraction 
+* Mpve between Projects
+
+## Key componets 
+
+* Classes : Logical code block that contains attributes and behaviors. A blue print of objects. Atributes can be variables and behaviiors can be methods.
+* Objects. an instance of a class. Each has unique attributes to differenatiate it from the other object.  
+
+
+
+# 4 Concepts of OOP
+
+1. **Inheritance** : Creating new class which derivative of an existing one. 
+
+2. **Polymorphsim**. Ability of a function to change its behaviors when called by different objects. Can take many form.
+
+3. **Encapsulation**: Limits access to method and variables by enclosing them in a single unit of scope. Help prevent unwanted modifications. and help reduces error.
+
+   Access modifiers represented by keywords such as public, private and protected are used for information hiding. The use of single and double underscores for this purpose in Python is a substitute for this practice. For example, let's examine an example of protected members in Python.
+
+   ```python3
+   class Alpha:
+   
+       def __init__(self):
+           self._a = 2 # protected member 'a'
+           self.__b = 3 # private mmber 'b'
+   
+   ```
+
+   
+
+4. **Abstraction**: Hides implementation details for data security. Python does not use abstraction directly, it uses inheritance to achieve it. 
+

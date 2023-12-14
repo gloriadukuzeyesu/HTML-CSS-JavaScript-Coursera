@@ -1,18 +1,4 @@
 
-a = [[96], [69]]
-
-res = ''.join(list(map(str, a)))
-print(''.join(list(map(str, a))))
-
-
-
-
-
-
-
-
-exit(0)
-
 # Set comprehension
 set_a = { x for x in range(10) if x % 2 == 0}
 # print(set_a)
