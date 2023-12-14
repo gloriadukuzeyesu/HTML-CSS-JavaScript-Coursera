@@ -173,10 +173,108 @@ print(factorial(0))
 ### Disadvantages
 
 * Hard to follow
-
 * Memory
-
 * Debugging
 
-  
 
+
+## Map and Filter functions
+
+Maps take all objects in a list and applies a function to it.
+
+Filter do the same, but takes the results and creates a new list with only the true values. 
+
+
+
+# Comprehensions
+
+four main types of comprehesions in Python:
+
+* List comprehension
+* Dictionary comprehension
+* Set comprehension
+* Generator comprehesion
+
+1. ## List comprehension
+
+   ```python
+   [<expression> for x in <sequence> if <condition>]
+   ```
+
+   ```python
+   # example
+   data = [2,3,4,5,5,9, 12, 15]
+   
+   data_copy = [ x for x in data if x % 2 == 0]
+   print(data)
+   print (data_copy)
+   nines = [x for x in range(len(data)) if x % 2 == 0]
+   print (nines)
+   ```
+
+   
+
+2. ## Dictionary comprehension
+
+   ```python
+   dict = { key: value for key, value in <sequence> if <condition>}
+   ```
+
+   ```python
+   # dictionary comprehesion 
+   
+   # Using range() function and no input list
+   using_range = {x : x * 2 for x in range(12)}
+   print(using_range)
+   print()
+   # using one list to make a dictionary 
+   numbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+   months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
+   
+   numdict = { x : x ** 2 for x in numbers}
+   print(numdict)
+   
+   print()
+   # using two lists
+   month_dict = { key : value for key, value in zip (numbers, months)}
+   print(month_dict)
+   
+   outputs
+   {0: 0, 1: 2, 2: 4, 3: 6, 4: 8, 5: 10, 6: 12, 7: 14, 8: 16, 9: 18, 10: 20, 11: 22}
+   
+   {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144}
+   
+   {1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'June', 7: 'July', 8: 'Aug', 9: 'Sept', 10: 'Oct', 11: 'Nov', 12: 'Dec'}
+   ```
+
+   
+
+3. ## Set comprehension
+
+4. Deals with the set data type and it is very similar to list comprehension. The only key difference is the use of curly brackets for sets instead of square brackets as in list. Dukoresha {} instead of [] nko muri list comprehension. Iyi nio difference yonyine. 
+
+   ```python3
+   set_a = { x for x in range(10) if x % 2 == 0}
+   print(set_a)
+   
+   {0, 2, 4, 6, 8}
+   ```
+
+   
+
+5. ## Generator comprehension
+
+   Generator comprehensions are also very similar to lists with the variation of using curved brackets instead of square brackets. They are also more memory efficient as compared to list comprehensions. For example:
+
+   ```python3
+   gen_obj = (x for x in data)
+   print(gen_obj)
+   for x in gen_obj:
+       print(x, end = " ")
+       
+       
+   <generator object <genexpr> at 0x100954040>
+   2 3 5 7 11 13 17 19 23 29 31 
+   ```
+
+   
