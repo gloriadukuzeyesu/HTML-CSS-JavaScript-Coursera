@@ -321,3 +321,5 @@ four main types of comprehesions in Python:
 
 4. **Abstraction**: Hides implementation details for data security. Python does not use abstraction directly, it uses inheritance to achieve it. 
 
+**Abstraction**: Hides implementation details for data security. Python does not use abstraction directly, it uses inheritance to achieve it. 
+
